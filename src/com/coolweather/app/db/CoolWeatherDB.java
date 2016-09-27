@@ -1,15 +1,16 @@
-package db;
+package com.coolweather.app.db;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import model.City;
-import model.County;
-import model.Province;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+
+import com.coolweather.app.model.City;
+import com.coolweather.app.model.County;
+import com.coolweather.app.model.Province;
 
 public class CoolWeatherDB {
 
@@ -68,7 +69,7 @@ public class CoolWeatherDB {
 				values.put("city_name", city.getCityName());
 				values.put("city_code", city.getCityCode());
 				values.put("province_id", city.getProvinceId());
-				db.insert("Province", null, values);
+				db.insert("City", null, values);
 			}
 		}
 		

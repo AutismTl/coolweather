@@ -1,4 +1,4 @@
-package db;
+package com.coolweather.app.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,8 +7,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
      public static final String CREATE_PROVINCE="create table Province ("
-    		 +"id integer primary key autoincrement,"
-    		 +"province_name text."
+    		 + "id integer primary key autoincrement, "
+    		 +"province_name text,"
     		 +"province_code text)";
      public static final String CREATE_CITY="create table City("
     		 +"id integer primary key autoincrement,"
